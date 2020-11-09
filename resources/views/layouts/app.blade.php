@@ -23,6 +23,7 @@
                     </div>
                     <ul class="nav navbar-nav">
                         <li><a href="">{{ trans('home') }}</a></li>
+                        <li><a href="{{route('task.create')}}">{{ trans('create_task') }}</a></li>                      
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href=""><span class="glyphicon glyphicon-user"></span> {{ trans('signup') }}</a></li>
@@ -42,6 +43,7 @@
             </nav>
         </div>
         <div class="row">
+            @include('common.errors')
             @yield('content')
         </div>
     </body>

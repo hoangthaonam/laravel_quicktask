@@ -15,8 +15,5 @@ use App\Http\Controllers\TaskController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::group(["prefix"=>"task", 'middleware' => 'locale'], function(){
-    Route::get('/change-language/{language}', [TaskController::class , 'changeLanguage'])->name('task.change-language');
-    Route::get('/', [TaskController::class ,'index']);
-});
+Route::resource('/task',TaskController::class);
+Route::get('/change-language/{language}', [TaskController::class , 'changeLanguage'])->name('task.change-language');
