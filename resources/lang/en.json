@@ -1,0 +1,11 @@
+{
+    "home" : "HOME PAGE",
+    "signup" : "Sign up",
+    "login": "Login",
+    "name" : "Name", 
+    "create_at": "Create at",
+    "action" : "Action",
+    "language" : "Language",
+    "layout_title": "Laravel Quickstart - Basic",
+    "task": "Task"
+}

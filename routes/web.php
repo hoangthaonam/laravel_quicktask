@@ -1,6 +1,9 @@
 <?php
 
+use App\Models\Task;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TaskController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(["prefix"=>"task", 'middleware' => 'locale'], function(){
+    Route::get('/change-language/{language}', [TaskController::class , 'changeLanguage'])->name('task.change-language');
+    Route::get('/', [TaskController::class ,'index']);
 });

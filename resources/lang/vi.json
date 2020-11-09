@@ -1,0 +1,11 @@
+{
+    "home" : "Trang chủ",
+    "signup" : "Đăng ký",
+    "login" : "Đăng nhập",
+    "name" : "Tên", 
+    "create_at" : "Thời gian tạo",
+    "action" : "Hành động",
+    "language" : "Ngôn ngữ",
+    "layout_title": "Laravel Quickstart - Cơ bản",
+    "task": "Nhiệm vụ"
+}
