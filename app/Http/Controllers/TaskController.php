@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateTaskRequest;
 use App\Models\Task;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
 
 class TaskController extends Controller
@@ -90,6 +91,12 @@ class TaskController extends Controller
      */
     public function destroy($id)
     {
-        //
+        try {
+            $task = Task::findOrFail($id);
+            $task->delete();
+            return redirect('/task');
+        } catch (ModelNotFoundException $th) {
+            abort(404,'Task does not exists!');
+        }
     }
 }
