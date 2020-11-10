@@ -7,5 +7,7 @@
     "action" : "Hành động",
     "language" : "Ngôn ngữ",
     "layout_title": "Laravel Quickstart - Cơ bản",
-    "task": "Nhiệm vụ"
+    "task": "Nhiệm vụ",
+    "create_task": "Tạo nhiệm vụ",
+    "create_button": "Tạo"
 }

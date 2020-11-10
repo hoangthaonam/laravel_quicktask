@@ -7,5 +7,7 @@
     "action" : "Action",
     "language" : "Language",
     "layout_title": "Laravel Quickstart - Basic",
-    "task": "Task"
+    "task": "Task",
+    "create_task": "Create a task",
+    "create_button": "Create"
 }
